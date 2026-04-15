@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // Health Check
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ status: 'TradeLink Backend Running' });
 });
 
